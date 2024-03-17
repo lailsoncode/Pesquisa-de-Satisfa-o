@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/clear-sans" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- <div class="header">
+</div> -->
+
+<div class="container">
+
+    <img src="img/header.png" alt="">
+  <form id="form" action="https://script.google.com/macros/s/AKfycby4b2nlJ5e_TCdV70YqH4DSUQoAJS5QOtkhL6nIVbdwQON8evcNfkg1eaz7Pie01ygF/exec" method="POST">
+
+    <h2>Quão satisfeito(a) você está com a os nossos serviços?</h2>
+
+    <div class="rating">
+      <input type="radio" id="muito-insatisfeito" name="satisfacao_contabil" value="Muito Insatisfeito(a)">
+      <label for="muito-insatisfeito" class="emoji"><img src="/img/instsf.png"></label>
+  
+      <input type="radio" id="insatisfeito" name="satisfacao_contabil" value="Insatisfeito(a)">
+      <label for="insatisfeito" class="emoji"><img src="/img/instf.png"></label>
+  
+      <input type="radio" id="neutro" name="satisfacao_contabil" value="Neutro">
+      <label for="neutro" class="emoji"><img src="/img/rzvl.png"></label>
+  
+      <input type="radio" id="satisfeito" name="satisfacao_contabil" value="Satisfeito(a)">
+      <label for="satisfeito" class="emoji"><img src="/img/stsf.png"></label>
+  
+      <input type="radio" id="extremamente-satisfeito" name="satisfacao_contabil" value="Extremamente Satisfeito(a)" required>
+      <label for="extremamente-satisfeito" class="emoji"><img src="/img/ftst.png"></label>
+    </div>
+
+    <div id="selectedSatisfacao"></div>
+  
+    <h2>Como você descreveria sua experiência com nossos serviços contábeis?</h2>
+    <div class="experience">
+      <input type="radio" id="nao-fiquei-satisfeito" name="experiencia_contabil" value="Não Fiquei Satisfeito(a)">
+      <label for="nao-fiquei-satisfeito" class="emoji2"><img src="/img/nstf.png"></label>
+  
+      <input type="radio" id="razoavel" name="experiencia_contabil" value="Razoável">
+      <label for="razoavel" class="emoji2"><img src="/img/rzvl.png"></label>
+  
+      <input type="radio" id="boa" name="experiencia_contabil" value="Boa">
+      <label for="boa" class="emoji2"><img src="/img/boa.png"></label>
+  
+      <input type="radio" id="muito-boa" name="experiencia_contabil" value="Muito Boa">
+      <label for="muito-boa" class="emoji2"><img src="/img/mtba.png"></label>
+  
+      <input type="radio" id="fantastica" name="experiencia_contabil" value="Fantástica" required>
+      <label for="fantastica" class="emoji2"><img src="/img/ftst.png"></label>
+    </div>
+  
+    <div id="selectedExperiencia"></div>
+
+    <textarea id="sugestao" name="sugestao" placeholder="Digite aqui sua sugestão (opcional)"></textarea>
+  
+    <input type="submit" value="Enviar">
+  </form>
+  
+
+  
+  <div class="message-box" id="messageBox">
+    <p class="agradecimento">Muito obrigado!!!!.</p>
+    <p class="agradecimento">Ficamos muito felizes que pode tirar um tempinho para nos avaliar.</p>
+    <p class="agradecimento">Precisando de algum suporte, basta entrar em contato com a nossa equipe de atendimento!</p>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
