@@ -41,8 +41,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
     });
   });
 
-    var ratingRadioButtons = document.querySelectorAll('input[name="satisfacao_contabil"]');
-    var experienceRadioButtons = document.querySelectorAll('input[name="experiencia_contabil"]');
+    var ratingRadioButtons = document.querySelectorAll('input[name="satisfacao"]');
+    var experienceRadioButtons = document.querySelectorAll('input[name="experiencia"]');
 
     ratingRadioButtons.forEach(function(radioButton) {
         radioButton.addEventListener('change', function() {
