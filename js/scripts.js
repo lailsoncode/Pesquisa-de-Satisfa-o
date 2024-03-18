@@ -59,3 +59,17 @@ document.getElementById('form').addEventListener('submit', function(event) {
             }
         });
     });
+
+    document.getElementById("form").addEventListener("submit", function(event){
+      event.preventDefault(); // Prevent form submission
+      
+      document.getElementById("submitButton").style.display = "none"; // Hide the submit button
+      document.getElementById("sendingText").style.display = "block"; // Show the sending text
+      
+      // Simulate sending response (you can replace this with actual code to send response)
+      setTimeout(function(){
+        // After some time (simulated delay), you may want to reset the form or show a success message
+        document.getElementById("submitButton").style.display = "inline-block"; // Show submit button again
+        document.getElementById("sendingText").style.display = "none"; // Hide sending text
+      }, 8000); // 2000 milliseconds = 2 seconds (you can adjust this time)
+    });
